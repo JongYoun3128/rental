@@ -1,0 +1,401 @@
+/* ========================================
+   리워드몰 사전예약 랜딩 페이지 스타일
+   ======================================== */
+
+/* ----------------------------------------
+   기본 스타일
+   ---------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+        "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #111827;
+}
+
+/* ----------------------------------------
+   레이아웃
+   ---------------------------------------- */
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* ----------------------------------------
+   버튼 스타일
+   ---------------------------------------- */
+.btn-primary {
+    background-color: #0f9ccf;
+    color: white;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: 0.75rem 1.25rem;
+    font-size: 0.875rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary:active {
+    transform: scale(0.99);
+}
+
+.btn-large {
+    padding: 0.75rem 1.25rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+}
+
+/* ----------------------------------------
+   카드 스타일
+   ---------------------------------------- */
+.card {
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+    background: white;
+    padding: 1.25rem;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card-dark {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+/* ----------------------------------------
+   입력 필드 스타일
+   ---------------------------------------- */
+.input-field {
+    width: 100%;
+    border-radius: 0.75rem;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    transition: all 0.2s;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #0f9ccf;
+    box-shadow: 0 0 0 2px rgba(15, 156, 207, 0.1);
+}
+
+.input-field-dark {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.input-field-dark::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* ----------------------------------------
+   모달 스타일
+   ---------------------------------------- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1rem;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 28rem;
+    border-radius: 1rem;
+    background: white;
+    padding: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.modal.hidden {
+    display: none;
+}
+
+/* ----------------------------------------
+   카운트다운 스타일
+   ---------------------------------------- */
+.countdown-box {
+    border-radius: 0.5rem;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0.375rem 0.75rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 2.5rem;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.countdown-unit {
+    font-size: 0.875rem;
+    opacity: 0.9;
+    margin-bottom: -2px;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+/* 카운트다운 컨테이너 */
+#countdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+#countdown > div {
+    display: flex;
+    align-items: flex-end;
+    gap: 0.25rem;
+}
+
+#countdown > span {
+    margin: 0 0.25rem;
+    opacity: 0.8;
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* ----------------------------------------
+   계산기 카드 스타일
+   ---------------------------------------- */
+.calc-card {
+    border-radius: 0.75rem;
+    padding: 1rem;
+    border: 1px solid #e5e7eb;
+    background: #f9fafb;
+}
+
+.calc-card-emphasis {
+    background: rgba(15, 156, 207, 0.06);
+    border-color: rgba(15, 156, 207, 0.3);
+}
+
+/* ----------------------------------------
+   FAQ 아코디언 스타일
+   ---------------------------------------- */
+.faq-item {
+    border-radius: 0.75rem;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.faq-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.faq-content {
+    border-top: 1px solid #f3f4f6;
+    padding: 1rem;
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+.faq-content.hidden {
+    display: none;
+}
+
+/* ----------------------------------------
+   그라데이션 배경
+   ---------------------------------------- */
+.gradient-bg {
+    background: linear-gradient(to bottom, #0b1020, #0b1020, #0e1328);
+    min-height: 100vh;
+}
+
+.hero-gradient {
+    position: absolute;
+    inset: 0;
+    opacity: 0.7;
+    background: radial-gradient(60rem 30rem at 20% 10%, rgba(15, 156, 207, 0.33), transparent),
+        radial-gradient(60rem 30rem at 80% 10%, rgba(15, 156, 207, 0.13), transparent);
+}
+
+/* ----------------------------------------
+   텍스트 그라데이션
+   ---------------------------------------- */
+.text-gradient {
+    background: linear-gradient(to right, #a5b4fc, #6ee7b7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* ----------------------------------------
+   애니메이션
+   ---------------------------------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+/* ----------------------------------------
+   배지 스타일 (사전예약 진행중 + 카운트다운)
+   ---------------------------------------- */
+.badge-container {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    min-width: 320px;
+}
+
+.badge-date-text {
+    letter-spacing: 0.025em;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.badge-countdown-wrapper {
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    min-width: 280px;
+}
+
+/* ----------------------------------------
+   반응형 유틸리티
+   ---------------------------------------- */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .btn-large {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    /* 모바일 배지 스타일 */
+    .badge-container {
+        padding: 1rem 1.25rem !important;
+        gap: 1rem !important;
+        min-width: auto !important;
+        width: 100%;
+    }
+
+    .badge-date-text {
+        font-size: 0.875rem !important;
+        line-height: 1.5;
+    }
+
+    .badge-countdown-wrapper {
+        padding: 0.75rem 1rem !important;
+        min-width: auto !important;
+        width: 100%;
+    }
+
+    /* 모바일 카운트다운 스타일 */
+    .countdown-box {
+        font-size: 1.125rem;
+        padding: 0.3rem 0.5rem;
+        min-width: 2rem;
+    }
+
+    .countdown-unit {
+        font-size: 0.75rem;
+    }
+
+    #countdown {
+        gap: 0.375rem;
+        font-size: 0.875rem;
+    }
+
+    #countdown > span {
+        margin: 0 0.125rem;
+        font-size: 1rem;
+    }
+}
+
+/* 작은 모바일 화면 (480px 이하) */
+@media (max-width: 480px) {
+    .badge-container {
+        padding: 0.875rem 1rem !important;
+        gap: 0.875rem !important;
+    }
+
+    .badge-date-text {
+        font-size: 0.8125rem !important;
+    }
+
+    .countdown-box {
+        font-size: 1rem;
+        padding: 0.25rem 0.45rem;
+        min-width: 1.875rem;
+    }
+
+    .countdown-unit {
+        font-size: 0.6875rem;
+    }
+
+    #countdown {
+        gap: 0.25rem;
+        font-size: 0.8125rem;
+    }
+
+    #countdown > span {
+        margin: 0 0.125rem;
+        font-size: 0.9375rem;
+    }
+}
+
+/* ----------------------------------------
+   스크롤바 스타일 (선택사항)
+   ---------------------------------------- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

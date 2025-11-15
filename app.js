@@ -236,7 +236,7 @@ function render() {
                 <a href="#calculator" class="text-sm font-medium text-white/80 underline-offset-4 hover:underline">리워드 계산해보기</a>
               </div>
             </div>
-            <div class="grid w-full max-w-xl grid-cols-3 gap-3 lg:max-w-md">
+            <div class="grid w-full max-w-xl gap-3 lg:max-w-md">
               <div class="flex-1 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
                 <div class="text-gray-500 text-sm">리워드 목표</div>
                 <div class="mt-1 text-2xl font-bold tracking-tight">결제액의 130%</div>

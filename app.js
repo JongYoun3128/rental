@@ -464,9 +464,7 @@ function render() {
               <div id="faq-content-3" class="faq-content hidden">그룹(5인) 단위 동시 달성 방식 또는 개인 누적 달성 방식 중 선택/혼합 가능합니다. 체감 보상을 위해 즉시지급(10~20%)을 권장합니다.</div>
             </div>
           </div>
-          <div class="mt-6 text-xs text-gray-500">
-            ※ 본 페이지는 제품군, 약관, 세부 정산 로직 확정 전의 제안용 시안입니다. 실제 론칭 전 최종 약관/개인정보 처리방침과 함께 공시됩니다.
-          </div>
+          
         </div>
       </section>
 
@@ -476,7 +474,7 @@ function render() {
           <div class="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
             <div>
               <div class="text-sm font-semibold">리워드몰 사전예약</div>
-              <div class="text-xs text-white/70">기간: 2025-11-17 ~ 2025-12-17 23:59 (KST) · 예약금 ₩110,000</div>
+              <div class="text-xs text-white/70">기간: 2025-11-17 ~ 2025-12-17 · 예약금 ₩110,000</div>
             </div>
             <div class="flex items-center gap-3">
               <button onclick="showModal()" class="btn-primary">예약하기</button>
